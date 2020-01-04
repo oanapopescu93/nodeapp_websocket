@@ -1,0 +1,221 @@
+html{
+	height:100%;
+	min-height:100%;	
+}
+body{
+	background-color:black;
+	color:yellow;
+	font-size:14px;
+	font-family:courier new;
+	min-height:100%;
+	position:relative;
+}
+.footer_main{
+	position:absolute;
+	bottom:0px;
+	width: 100%;
+    left: 0;
+    right: 0;
+}
+input, textarea, select{
+	background:black;
+	color:yellow;
+	border:solid 1px yellow;
+	border-radius:5px;
+	padding:5px 10px;
+	outline: none;
+}
+textarea {
+  outline: none;
+  resize: none;
+}
+a, a:hover, a:focus{
+	color:yellow;
+	text-decoration: none;
+}
+.navbar{
+	border-bottom:solid 1px yellow;
+}
+.nav>li>a{
+	border-right:solid 1px yellow;
+}
+.nav>li:last-child>a{
+	border-right:solid 1px transparent;
+}
+.nav>li>a:focus, .nav>li>a:hover{
+	background:none;
+}
+.navbar-toggle{
+	border:solid 1px yellow;
+}
+.navbar-toggle .icon-bar{
+	background:yellow;
+}
+.button_yellow{
+	color:yellow;
+	padding:5px 10px;
+	border:solid 1px yellow;
+	border-radius:5px;
+	text-align:center;
+	font-size:14px;
+	line-height:14px;
+}
+
+/* chatroom */
+.chatroom #chatmessages{
+	display:block;
+	width:100%;
+	margin-bottom:10px;
+	overflow:auto;
+}
+.chatroom input{
+	display:block;
+	width:100%;
+	margin-bottom:10px;
+}
+#user_form{
+	display:inline-block;
+}
+.chatroom #chatmessages{
+	height:200px;
+	background:black;
+	color:yellow;
+	border:solid 1px yellow;
+	border-radius:5px;
+	padding:5px 10px;
+	outline: none;
+}
+.chatroom .chattext_container{
+	margin-right:0px;
+}
+.user_list {
+	background:black;
+	color:yellow;
+	border:solid 1px yellow;
+	border-radius:5px;
+	min-height:200px;
+}
+.user_list .header{
+	background:yellow;
+	color:black;
+	border-radius:5px 5px 0px 0px;
+}
+.user_list ul{
+	margin:0px;
+	padding:0px;
+}
+.user_list ul li{
+	list-style:none;
+	padding:5px 10px;
+	border-bottom:solid 1px yellow;
+}
+.user_list ul li:last-child{
+	border-bottom:solid 1px transparent;
+}
+.message{
+	margin-bottom:10px;
+}
+.message .user{
+	display: block;
+	padding:0px 5px;
+}
+.message .text{
+	display: inline-block;
+	padding:0px 5px;
+}
+.message .date{
+	display: inline-block;
+	padding:0px 5px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border: solid 1px yellow;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: yellow;
+    outline: 1px solid yellow;
+    border-radius: 50px;
+}
+
+/* game01 */
+
+.check_container{
+	display:inline-block;
+}
+.check_container .check_box{
+	border:solid 1px yellow;
+	height:50px;
+	width:50px;
+	display:inline-block;
+	float:left;
+	text-align:center;
+	cursor: pointer;
+}
+.check_container .check_box span{
+	display:none;
+	font-size:32px;
+	font-weight:bold;
+	line-height:50px;
+}
+.check_container .check_box:hover span{
+	display:block;
+	
+}
+.check_container .check_box.clicked span{
+	display:block;
+}
+
+/* weather */
+
+.weather_table{
+	border-collapse: collapse;
+	
+}
+
+.weather_table_header td{
+	vertical-align:top;
+	padding:5px;
+	border:solid 1px yellow;
+	text-align:center;
+}
+.weather_table_body > td{
+	vertical-align:top;
+	border:solid 1px yellow;
+	text-align:center;
+}
+.weather_icon{
+	width:50px;
+}
+.weather_info tr td{
+	width:160px;
+	padding:5px;	
+}
+.weather_info tr:first-child td{
+	border-bottom:solid 1px yellow;
+}
+.weather_info tr td:first-child{
+	border-right:solid 1px yellow;
+}
+.weather_info tr:nth-child(3) td{
+	height:75px;
+	vertical-align:top;
+}
+
+.weather_degree{
+	font-size:24px;
+	line-height:24px;
+}
+#city{
+	display:none;
+}
+
+.turn_right{
+	float:right;
+}
