@@ -1,0 +1,30 @@
+<div class="row">
+	<div class="col-sm-12">
+		<h1><span id="username">{{ output }}</span> chatroom</h1>
+		<div id="user_join"></div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-4 chatroom">
+		<div class="user_list" id="user_list">
+			<div class="header">Users</div>
+			<ul></ul>
+		</div>
+	</div>
+	<div class="col-sm-8 chatroom">
+		<form id="chatform" method="post" action="/members/chat">				  
+		  <div id="chatmessages"></div>
+		  <div class="col-sm-10"><div class="row chattext_container"><input type="text" name="chattext" id="chattext" placeholder="type here"></div></div>
+		  <div class="col-sm-2"><div class="row"><input type="submit" value="Send" id="chatsend"></div></div>
+		</form>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-12">
+		<span><b>TIPS: </b>If you want to send privat message --> /w username message</span>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="../assets/scripts/websocket_users.js"></script>
